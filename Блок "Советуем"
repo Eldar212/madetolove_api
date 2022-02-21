@@ -2,22 +2,29 @@ GET /advice
 
 В данном блоке выводятся товары, у которых с свойствах стоит галочка Советуем. В ответе возвращается массив со всеми товарами выбранными как "Советуем"
 и название самого блока.
+поле is_new принимает значение новинка, если у товара стоит галочка рядом с полем Новинка
 Пагинации нет.
 
 Пример: 
 {
-    {
-    "id" : "3424",
-    "name" : "Белые розы",
-    "link": "/path/to/product/",
-    "prevue_picture_path" : "path/to/picture/",
-    "price" : "5 000"
+   {
+        "id" : "3424",
+        "name" : "Белые розы",
+        "link": "/path/to/product/",
+        "discount" : "30",
+        "old_price" : "7500",
+        "is_new" : "Новинка",
+        "prevue_picture_path" : "path/to/picture/",
+        "price" : "5 000"
    },
    {
-    "id": "wdwda",
-    "name" : "набор Белые розы",
-    "link": "/path/to/product/",
-    "prevue_picture_path" : "path/to/picture/",
-    "price" : "5 000"
+        "id": "wdwda",
+        "name" : "набор Белые розы",
+        "link": "/path/to/product/",
+        "discount" : "30",
+        "old_price" : "7500",
+        "is_new" : "Новинка",
+        "prevue_picture_path" : "path/to/picture/",
+        "price" : "5 000"
    }
 }
