@@ -7,24 +7,40 @@ GET /advice
 
 Пример: 
 {
-   {
-        "id" : "3424",
-        "name" : "Белые розы",
-        "link": "/path/to/product/",
-        "discount" : "30",
-        "old_price" : "7500",
-        "is_new" : "Новинка",
-        "prevue_picture_path" : "path/to/picture/",
-        "price" : "5 000"
-   },
-   {
-        "id": "wdwda",
-        "name" : "набор Белые розы",
-        "link": "/path/to/product/",
-        "discount" : "30",
-        "old_price" : "7500",
-        "is_new" : "Новинка",
-        "prevue_picture_path" : "path/to/picture/",
-        "price" : "5 000"
-   }
+      {
+           "id" : "3424",
+           "name" : "Белые розы",
+           "link": "/path/to/product/",
+           "discount" : "30",
+           "is_new" : "Новинка",
+           "old_price" : null,
+           "picture" : null,
+           "price" : null,
+           "offers_list" : {
+               {
+                   "old_price" : "7500",
+                   "price": "5000",
+                   "size" : "s",
+                   "picture" : "path/to/picture"
+               },
+               {
+                   "old_price" : "5500",
+                   "price": "3000",
+                   "size" : "s",
+                   "picture" : "path/to/picture"
+               }
+           }
+      },
+      {
+           "id": "12314",
+           "name" : "набор Белые розы",
+           "link": "/path/to/product/",
+           "discount" : "30",
+           "old_price" : "7500",
+           "is_new" : "Новинка",
+           "picture" : "path/to/picture/",
+           "price" : "5 000",
+           "offers_list" : null
+      }
+    
 }
